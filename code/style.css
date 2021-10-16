@@ -1,5 +1,49 @@
 /* If you can see a peach background, the css file is correctly linked. Feel free to change or remove this styling! */
-
+* {
+  margin: 0;
+}
 body {
   background-color: peachpuff;
+  font-family: "Courier New", Courier, monospace;
+}
+
+header {
+  margin: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  margin: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#hamburger {
+}
+
+#hamburger div {
+  width: 30px;
+  height: 5px;
+  background-color: black;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.pagemarker {
+}
+
+.pagecontent {
+  margin: 100px 40px;
+}
+
+/***** INDEX.HTML *****/
+
+#platzhalter {
+  height: 40px;
+  width: 40px;
+  background-color: deeppink;
+  border-radius: 50%;
 }
