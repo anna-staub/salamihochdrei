@@ -3,19 +3,20 @@
   margin: 0;
 }
 body {
-  background-color: peachpuff;
   font-family: "Courier New", Courier, monospace;
 }
 
 header {
-  margin: 20px 40px;
+  background-color: yellow;
+  margin: 40px 40px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 footer {
-  margin: 20px 40px;
+  background: rosybrown;
+  margin: 40px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,11 +33,12 @@ footer {
   margin: 5px;
 }
 
-.pagemarker {
+#logo {
 }
 
 .pagecontent {
-  margin: 100px 40px;
+  margin: 40px;
+  background-color: turquoise;
 }
 
 /***** INDEX.HTML *****/
@@ -46,4 +48,36 @@ footer {
   width: 40px;
   background-color: deeppink;
   border-radius: 50%;
+}
+
+/***** WORK.HTML *****/
+#workcontainer {
+  border: solid red 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+.workcontainerImage {
+  border: solid blue 3px;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+.workimage {
+  width: 100%;
+}
+.workcontainerText {
+  border: solid green 3px;
+  width: 70%;
+  margin-top: 50px;
+}
+.workdescription {
+  border: solid orange 1px;
+  margin: 10px 0;
+}
+.price {
+  border: solid teal 1px;
+  margin: 10px 0;
+  text-align: right;
 }
