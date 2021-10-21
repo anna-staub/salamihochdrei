@@ -1,25 +1,17 @@
-/* If you can see a peach background, the css file is correctly linked. Feel free to change or remove this styling! */
 * {
   margin: 0;
 }
+
 body {
   font-family: "Courier New", Courier, monospace;
 }
 
-.pagetitle {
-  text-align: left;
-}
-
 header {
-  margin: 40px 40px 10px 40px;
+  margin: 40px 40px 40px 40px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-end;
   padding: 5px;
-}
-
-header .pagetitle {
-  display: none;
 }
 
 footer {
@@ -41,12 +33,36 @@ footer {
   margin-left: 0;
 }
 
+#navbar {
+  border: solid green 4px;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  background-color: lightcoral;
+  display: none;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  font-size: 32px;
+}
+
+.pagelink {
+  font-weight: bold;
+}
+
 #logo {
+  font-size: 14px;
   text-align: end;
 }
 
 .pagecontent {
   margin: 20px 40px 40px 40px;
+}
+
+.pagetitle {
+  text-align: center;
 }
 
 /***** INDEX.HTML *****/
@@ -84,9 +100,23 @@ footer {
   text-align: right;
 }
 
+/***** ABOUT.HTML *****/
+
+/***** CONTACT.HTML *****/
+.icon {
+  width: 40px;
+  margin: 10px 10px 10px 0;
+}
+
 @media (min-width: 768px) {
-  header .pagetitle {
+  #hamburger {
+    display: none;
+  }
+  #navbar {
     display: contents;
+  }
+  #logo {
+    font-size: 18px;
   }
   .pagetitle {
     display: none;
