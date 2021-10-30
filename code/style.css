@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -7,11 +8,10 @@ body {
 }
 
 header {
-  margin: 40px 40px 40px 40px;
+  margin: 40px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 5px;
 }
 
 footer {
@@ -19,9 +19,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-#hamburger {
 }
 
 #hamburger div {
@@ -34,18 +31,23 @@ footer {
 }
 
 #navbar {
-  border: solid green 4px;
-  display: flex;
-  justify-content: center;
-  width: 60%;
-  background-color: lightcoral;
   display: none;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+#navbar a {
+  margin-right: 8%;
 }
 
 header a {
   text-decoration: none;
   color: black;
   font-size: 32px;
+}
+header a:hover {
+  font-weight: bolder;
 }
 
 .pagelink {
@@ -58,14 +60,20 @@ header a {
 }
 
 .pagecontent {
-  margin: 20px 40px 40px 40px;
+  margin: 40px;
 }
 
 .pagetitle {
-  text-align: center;
+  text-align: left;
+  margin: 40px;
 }
 
 /***** INDEX.HTML *****/
+.pagetitle-invisible {
+  text-align: left;
+  margin: 40px 0;
+  display: none;
+}
 
 /***** WORK.HTML *****/
 .workpagecontent {
@@ -74,27 +82,43 @@ header a {
   margin: 0;
 }
 
-#workcontainer {
+.workcontainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 50px 0;
+  align-items: flex-start;
+  margin: 0 0 40px 0;
 }
+
+.workcontainer a {
+  text-decoration: none;
+  color: black;
+}
+
+.workcontainer a:hover {
+  padding: 2px;
+  border-radius: 10px;
+}
+
 .workcontainerImage {
   display: flex;
   justify-content: center;
-  width: 70%;
+  border-radius: 10px;
 }
+
 .workimage {
   width: 100%;
+  border-radius: 10px;
 }
+
 .workcontainerText {
   width: 70%;
   margin-top: 50px;
 }
+
 .workdescription {
   margin: 10px 0;
 }
+
 .price {
   margin: 10px 0;
   text-align: right;
@@ -112,28 +136,37 @@ header a {
   #hamburger {
     display: none;
   }
+
   #navbar {
-    display: contents;
+    display: flex;
   }
+
   #logo {
     font-size: 18px;
   }
+
   .pagetitle {
     display: none;
   }
+
+  .pagetitle-invisible {
+    display: block;
+  }
+
   .workpagecontent {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  #workcontainer {
-    width: 50%;
+
+  .workcontainer {
+    width: 47%;
   }
 }
 
 @media (min-width: 1024px) {
-  #workcontainer {
-    width: 20%;
+  .workcontainer {
+    width: 30%;
   }
 }
